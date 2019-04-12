@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bloc_Note_user</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="page_user.css" />
+    <script type="text/javascript" src="page_user.js"></script>
+</head>
+<body onload="nom()">
+    <table width=100% border="8">
+    <tr>
+        <td Width =60% class="textN" id="nm"></td>
+        <td width =20% class="text"><INPUT TYPE="search" placeholder="Recherche" class="rech"></td>
+        <td width =20%><a href= ".\page_login.html"><input type="submit" value="déconnection" class="bdec" onclick="deconnecter()"></a></td>
+    </tr>
+    <tr>
+
+        <table width=100% border="8">
+        <tr> 
+            <td width = 10%>
+            <table class="WT">
+              <tr class="WT"> 
+                  <td rowspan="2">
+                    <ul id="menu" >
+                            <li><a href="">note</a>
+                                <ul>
+                                    <li><span onclick="Nov()">nouveau</span></li>
+                                    <li><span onclick="consulter()">consulter</span></li>
+                                </ul>
+                            </li>
+                            <li><a href="">rappel</a>
+                                <ul>
+                                    <li><a href="">nouveau</a>  
+                                    </li>
+                                    <li><a href="">consulter</a>  
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="">corbiller</a>
+                                <ul>
+                                <li><a href="">afficher</a>
+                                </li>
+                                <li><a href="">vider</a>
+                                </li>
+                            </ul>
+                        </ul>
+                   </td>
+                </tr>
+            </table>
+            </td>
+           
+            <td width = 90%>
+               <table class="tab" id="nouveau"> 
+                        <tr class="WT">
+                                <td width = 90%><input class="WT" TYPE="text" value="Titre:" id="tit"></td>
+                                <td width = 10%><INPUT class="WT" TYPE="date" value="date" id="day"></td>
+                         </tr>
+                        <tr class="WT">
+                            <td class="WT" colspan="2">
+                                <textarea rows="20" cols="80"class="WT" id="text"></textarea>
+                            </td>
+                        </tr> 
+                        <tr class="WT">
+                          <td width =50%>
+                                <input type="submit" value="ajouter" class="zon_A" onclick="ajouter()">
+                          </td>
+                          <td width =50%>
+                            <button type="reset" value="Reset">annuler</button>
+                          </td>  
+                        </tr>           
+                </table>
+               <div class="divNote" id="liste">
+                    <h1> Vos Notes</h1> 
+                    <div id="aa"></div><br><br><br>   
+                    <div class="position">
+                        <span onclick="afficher()"></span>
+                        <div>
+                                <table class="affich" id="aff" > 
+                                        <tr class="WT">
+                                                <td width = 90%><textarea class="WT" id = "tit1"></textarea></td>
+                                                <td width = 10%><textarea class="WT" id = "day1"></textarea></td>
+                                         </tr>
+                                        <tr class="WT">
+                                            <td class="WT" colspan="2">
+                                                <textarea rows="20" cols="80"class="WT" id = "txt"></textarea>
+                                            </td>
+                                        </tr> 
+                                        <tr class="WT">
+                                          <td width =50%>
+                                            <button>ajouter</button>
+                                          </td>
+                                          <td width =50%>
+                                            <button>annuler</button>
+                                          </td>  
+                                        </tr>           
+                                </table>
+                        </div>
+                    </div> 
+                </div>
+            </td>
+      </tr>
+    </table>
+    <script type="text/javascript" src="page_user.js"></script>
+</body
+></html>
+

@@ -1,0 +1,37 @@
+body{
+   background-image: url("bloc.jpg");
+   background-repeat: no-repeat;
+   background-size: 100% 100%;  
+}
+.table{
+    margin-left: 300px;
+    margin-right: 500px;
+    margin-bottom: 200px;
+    margin-top: 200px;
+    width: 50%;
+    height: 200px;
+}
+.bcnx{
+    background-color:  rgb(104, 105, 107);
+    Color:white;
+    font-weight: bold;
+    padding: 10px 40px;
+    border-radius: 2px;
+    cursor: pointer; 
+    box-shadow: 0 8px 16px 0 grey;
+    text-decoration: none;
+    display: block;
+    margin:auto;   
+    
+}
+.text
+{
+    Color:rgba(165, 60, 147, 0.918);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-size:200%;
+    text-align: center;
+}
+.zon_t{
+    margin-left :80px; 
+}
